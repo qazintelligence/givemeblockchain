@@ -1,5 +1,19 @@
+import java.util.Scanner;
+
 public class Main{
+
+    public static int sum(int n){
+        if (n==1 || n == 0){
+            return n;
+        }
+        return n*n+sum(n-1);
+    }
+
     public static void main(String[] args){
-        System.out.println("checkk");
+        Scanner sc = new Scanner(System.in);
+        int nn = sc.nextInt();
+
+        System.out.println(sum(nn));
+
     }
 }
