@@ -13,11 +13,13 @@ public class five {
     }
 
     public static void reverse(Scanner scanner, int n) {
-        if (n > 0) {
-            int element = scanner.nextInt();
-            reverse(scanner, n - 1);
-            System.out.print(element + " ");
-        }
+        if (n == 0) {
+            return;}
+
+        int element = scanner.nextInt();
+        reverse(scanner, n - 1);
+        System.out.print(element + " ");
+
     }
 }
 
