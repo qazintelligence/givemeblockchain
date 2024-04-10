@@ -11,11 +11,13 @@ public class six {
     }
 
     public static void printReversedSequence(Scanner sc, int n) {
-        if (n > 0) {
-            String str = sc.nextLine();
-            printReversedSequence(sc, n - 1);
-            System.out.println(str);
-        }
+        if (n == 0) {
+            return;}
+
+        String str = sc.nextLine();
+        printReversedSequence(sc, n - 1);
+        System.out.println(str);
+
     }
 }
 
